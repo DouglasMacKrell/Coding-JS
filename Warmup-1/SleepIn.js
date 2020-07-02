@@ -17,6 +17,8 @@ const sleepIn = (weekday,vacation) => {
       return true;
   } else if (vacation) {
       return true;
+  } else if (!weekday && !vacation) {
+      return true;
   } else {
       return false;
   }
