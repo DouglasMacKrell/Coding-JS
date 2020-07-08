@@ -21,7 +21,7 @@ const makeBricks = (small,big,goal) => {
         return true;
     } else if (smallBricks >= goal) {
         return true;
-    } else if (largeBricks === goal) {
+    } else if (largeBricks >= goal && goal % 5 === 0) {
         return true;
     } 
     for (let i = big; i > 0; i--) {
