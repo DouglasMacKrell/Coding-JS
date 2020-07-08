@@ -15,7 +15,12 @@
 // makeBricks(3, 2, 10) → true
 
 const makeBricks = (small,big,goal) => {
-
+    let smallBricks = small;
+    let largeBricks = big * 5;
+    if (smallBricks + largeBricks >= goal) {
+        return true;
+    }
+    return false;
 };
 
 console.log(makeBricks(3, 1, 8));
