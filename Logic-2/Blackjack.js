@@ -17,10 +17,23 @@
 // blackjack(19, 22) → 19
 
 const blackjack = (a,b) => {
-  
+    if (a > 21 && b > 21){
+        return 0
+    } else if (a > b && a <= 21) {
+        return a
+    } else if (b > a && b <= 21) {
+        return b
+    } 
+    if (a > b) {
+        return b
+    } else {
+        return a
+    }
 };
 
-console.log(blackjack(19, 22));
+console.log(blackjack(19, 21));
 console.log(blackjack(21, 19));
 console.log(blackjack(19, 22));
 console.log(blackjack(23, 25));
+console.log(blackjack(21, 21));
+console.log(blackjack(22, 19));
