@@ -17,12 +17,21 @@
 const makeBricks = (small,big,goal) => {
     let smallBricks = small;
     let largeBricks = big * 5;
-    if (smallBricks + largeBricks >= goal) {
+    if (smallBricks + largeBricks === goal) {
         return true;
+    } else if (smallBricks >= goal) {
+        return true;
+    } else if (largeBricks === goal) {
+        return true;
+    } 
+    for (let i = big; i > 0; i--) {
+        if ((i * 5) + smallBricks >= goal) {
+            return true;
+        }
     }
     return false;
 };
 
 console.log(makeBricks(3, 1, 8));
 console.log(makeBricks(3, 1, 9));
-console.log(makeBricks(3, 2, 10))
+console.log(makeBricks(3, 2, 10));
