@@ -11,16 +11,25 @@
 // frontBack('ab') → ba
 
 const frontBack = (str) => {
-    let firstChar = str[0];
-    let lastChar = str[str.length - 1];
     let splitStr = str.split("");
-    splitStr.shift();
+    let firstChar = splitStr.shift();
+    let lastChar = splitStr.pop();
     splitStr.unshift(lastChar);
-    splitStr.pop();
     splitStr.push(firstChar);
     let newStr = splitStr.join("");
     return newStr;  
 }
+// const frontBack = (str) => {
+//     let firstChar = str[0];
+//     let lastChar = str[str.length - 1];
+//     let splitStr = str.split("");
+//     splitStr.shift();
+//     splitStr.unshift(lastChar);
+//     splitStr.pop();
+//     splitStr.push(firstChar);
+//     let newStr = splitStr.join("");
+//     return newStr;  
+// }
 
 console.log("frontBack with Array Methods")
 console.log(frontBack("code"))
