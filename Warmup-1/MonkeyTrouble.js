@@ -13,9 +13,10 @@
 // monkeyTrouble(true, false) → false
 
 const monkeyTrouble = (aSmile,bSmile) => {
-  return aSmile === bSmile ? true : false;
+  return aSmile === bSmile;
 }
 
 console.log(monkeyTrouble(true, true));
 console.log(monkeyTrouble(false, false));
 console.log(monkeyTrouble(true, false));
+
