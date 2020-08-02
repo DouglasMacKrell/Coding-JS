@@ -19,3 +19,6 @@ const intMax = (a, b, c) => {
 console.log(intMax(1, 2, 3)); 
 console.log(intMax(1, 3, 2));
 console.log(intMax(3, 2, 1));
+console.log(intMax(-2, -1, -3));
+console.log(intMax(5, 5, 5));
+
