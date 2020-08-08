@@ -11,6 +11,12 @@
 // diff21(10) → 11
 // diff21(21) → 0
 
+
+
 const diff21 = (n) => {
     return 21 >= n ? 21 - n : (n - 21) * 2;
 }
+
+console.log(diff21(19));
+console.log(diff21(10));
+console.log(diff21(21));
