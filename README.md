@@ -62,6 +62,10 @@ alt="How To Solve startWord On CodingJS" width="240" height="180" border="10" />
 alt="How To Solve diff21 On CodingJS" width="240" height="180" border="10" /></a>  
 * [How To Solve diff21 On CodingJS](https://youtu.be/6g0jNz_6C8I)
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=fiBkv7MMl60" target="_blank"><img src="http://img.youtube.com/vi/fiBkv7MMl60/0.jpg" 
+alt="How To Solve or35 And stringTimes On CodingJS" width="240" height="180" border="10" /></a>  
+* [How To Solve or35 And stringTimes On CodingJS](https://youtu.be/fiBkv7MMl60)
+
 ## LOCAL SETUP
 
 **NOTE: You must install [Node.js](https://nodejs.org) in your computer for this to run.**
