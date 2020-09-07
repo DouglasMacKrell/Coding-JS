@@ -13,6 +13,20 @@
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const luckySum = (a, b, c) => {
   if (a === 13) {
     return 0;
