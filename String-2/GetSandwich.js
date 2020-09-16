@@ -13,13 +13,6 @@
 // getSandwich('xxbreadyy') →
 
 function getSandwich(str) {
-  //   let finder1 = str.indexOf("bread");
-  //   let firstSlice = str.slice(finder1 + 5);
-  //   let finder2 = firstSlice.indexOf("bread");
-  //   let sandwich = "";
-  //   if (finder2 >= 0) {
-  //     sandwich = firstSlice.slice(0, finder2);
-  //   }
   let strCopy = str;
   let sliceArr = [];
   let sandwich = "";
@@ -29,10 +22,8 @@ function getSandwich(str) {
     strCopy = strCopy.slice(finder + 5);
     finder = strCopy.indexOf("bread");
   }
-  console.log(sliceArr);
   if (sliceArr.length >= 2) {
     let multiplier = (sliceArr.length - 2) * 5;
-    console.log("multiplier:", multiplier);
     let openFace = str.slice(sliceArr[0] + 5);
     sandwich = openFace.slice(0, sliceArr[sliceArr.length - 1] + multiplier);
   }
