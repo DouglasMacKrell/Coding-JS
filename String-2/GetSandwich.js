@@ -40,7 +40,7 @@ function getSandwich(str) {
 
 
 
-
+// Better implementation thanks to YouTuber whamer100!
 
 const getSandwich2 = (str) => {
   let sandwich = ""
