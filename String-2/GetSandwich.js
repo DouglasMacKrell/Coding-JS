@@ -12,6 +12,12 @@
 // getSandwich('xxbreadjambreadyy') → jam
 // getSandwich('xxbreadyy') →
 
+// scascsacbreadbreadjambread = breadjam
+
+
+
+
+
 function getSandwich(str) {
   let strCopy = str;
   let sliceArr = [];
@@ -23,11 +29,31 @@ function getSandwich(str) {
     finder = strCopy.indexOf("bread");
   }
   if (sliceArr.length >= 2) {
-    let multiplier = (sliceArr.length - 2) * 5;
+    let multiplier = (sliceArr.length - 2) * 5; // 5
     let openFace = str.slice(sliceArr[0] + 5);
     sandwich = openFace.slice(0, sliceArr[sliceArr.length - 1] + multiplier);
   }
   return sandwich;
 }
 
-console.log(getSandwich("breadbreaxbread"));
+
+
+
+
+
+
+const getSandwich2 = (str) => {
+  let sandwich = ""
+  let firstSlice = str.indexOf("bread")
+  let lastSlice = str.lastIndexOf("bread")
+  if (firstSlice === -1 || firstSlice === lastSlice) {
+    return sandwich
+  }
+  sandwich = str.slice(firstSlice + 5, lastSlice)
+  return sandwich
+}
+
+console.log(getSandwich2("abcbreadbreadjambreadabc"));
+
+// input = breadjam  [3, 0, 3] // 8
+// output = breadjam
