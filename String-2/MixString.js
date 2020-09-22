@@ -16,22 +16,22 @@ function mixString(a, b) {
   let stack = [];
   let arrA = a.split("");
   let arrB = b.split("");
-  let stackCount = arrA.length + arrB.length
+  let stackCount = arrA.length + arrB.length;
   stack.push(arrA.shift());
   const blender = (arr1, arr2) => {
     if (stack.length === stackCount) {
       return;
     }
     if (arrB.length !== 0) {
-        stack.push(arr2.shift());
-    } 
-    if (arrA.length !== 0) {
-        stack.push(arr1.shift());
+      stack.push(arr2.shift());
     }
-    blender(arr1, arr2)
+    if (arrA.length !== 0) {
+      stack.push(arr1.shift());
+    }
+    blender(arr1, arr2);
   };
-  blender(arrA, arrB)
-  return stack.join("")
+  blender(arrA, arrB);
+  return stack.join("");
 }
 
 console.log(mixString("abc", "xyz"));
