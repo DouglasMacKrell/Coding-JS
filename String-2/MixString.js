@@ -17,16 +17,15 @@ function mixString(a, b) {
   let arrA = a.split("");
   let arrB = b.split("");
   let stackCount = arrA.length + arrB.length;
-  stack.push(arrA.shift());
   const blender = (arr1, arr2) => {
     if (stack.length === stackCount) {
       return;
     }
-    if (arrB.length !== 0) {
-      stack.push(arr2.shift());
-    }
     if (arrA.length !== 0) {
       stack.push(arr1.shift());
+    }
+    if (arrB.length !== 0) {
+      stack.push(arr2.shift());
     }
     blender(arr1, arr2);
   };
