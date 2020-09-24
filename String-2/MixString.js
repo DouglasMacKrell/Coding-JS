@@ -12,6 +12,15 @@
 // mixString('Hi', 'There') → HTihere
 // mixString('xxxx', 'There') → xTxhxexre
 
+
+
+
+
+
+
+
+
+
 function mixString(a, b) {
   let stack = [];
   let arrA = a.split("");
