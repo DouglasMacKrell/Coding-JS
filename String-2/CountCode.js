@@ -12,6 +12,12 @@
 // countCode('codexxcode') → 2
 // countCode('cozexxcope') → 2
 
+
+
+
+
+
+
 function countCode(str) {
   let codeCounter = 0;
   for (let i = 0; i < str.length; i++) {
