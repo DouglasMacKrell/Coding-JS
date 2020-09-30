@@ -14,6 +14,13 @@
 // repeatFront('Chocolate', 3) → ChoChC
 // repeatFront('Ice Cream', 2) → IcI
 
+
+
+
+
+
+
+
 function repeatFront(str, n) {
   let result = "";
   let countdown = n;
