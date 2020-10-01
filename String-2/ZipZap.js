@@ -12,6 +12,17 @@
 // zipZap('zopzop') → zpzp
 // zipZap('zzzopzop') → zzzpzp
 
+
+
+
+
+
+
+
+
+
+
+
 function zipZap(str) {
   let strArr = str.split("");
   let result = "";
