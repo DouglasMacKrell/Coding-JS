@@ -15,24 +15,32 @@
 // endOther('AbC', 'HiaBc') → true
 // endOther('abc', 'abXabc') → true
 
+
+
+
+
+
+
+
+
+
 function endOther(a, b) {
   let endA = "";
   let endB = "";
+  let loopCounter = 0;
 
-  if (a.length) {
-    endA =
-      a[a.length - 3].toLowerCase() +
-      a[a.length - 2].toLowerCase() +
-      a[a.length - 1].toLowerCase();
+  if (a.length <= b.length) {
+    loopCounter = a.length;
+  } else {
+    loopCounter = b.length;
   }
 
-  if (b.length) {
-    endB =
-      b[b.length - 3].toLowerCase() +
-      b[b.length - 2].toLowerCase() +
-      b[b.length - 1].toLowerCase();
+  for (let i = 0; i < loopCounter; i++) {
+    endA += a[a.length - loopCounter + i].toLowerCase();
+    endB += b[b.length - loopCounter + i].toLowerCase();
   }
-
+  console.log("endA", endA);
+  console.log("endB", endB);
   if (endA === endB) {
     return true;
   } else {
@@ -40,4 +48,4 @@ function endOther(a, b) {
   }
 }
 
-console.log(endOther("abc", "abXabc"));
+console.log(endOther("Z", "12xz"));
