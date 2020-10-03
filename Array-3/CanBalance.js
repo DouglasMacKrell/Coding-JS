@@ -12,6 +12,16 @@
 // canBalance([2, 1, 1, 2, 1]) → false
 // canBalance([10, 10]) → true
 
+
+
+
+
+
+
+
+
+
+
 function canBalance(nums) {
   let leftSum = 0;
   let rightSum = 0;
