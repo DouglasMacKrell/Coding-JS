@@ -6,6 +6,15 @@
 
 // Examples
 
+
+
+
+
+
+
+
+
+
 function stringSplosion(str) {
   let splodeStr = str.split("");
   let result = "";
