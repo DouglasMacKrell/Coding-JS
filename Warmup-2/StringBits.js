@@ -11,6 +11,15 @@
 // stringBits('Hi') → H
 // stringBits('Heeololeo') → Hello
 
+
+
+
+
+
+
+
+
+
 function stringBits(str) {
   let result = "";
   for (let i = 0; i < str.length; i++) {
