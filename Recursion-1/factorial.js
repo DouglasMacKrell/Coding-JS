@@ -11,5 +11,6 @@
 // factorial(3) → 6
 
 function factorial(n) {
-    
+    if (n === 1) return 1
+    return factorial(n * (n - 1))
 }
