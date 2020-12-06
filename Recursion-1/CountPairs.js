@@ -14,5 +14,5 @@
 // countPairs('axbx') → 1
 
 function countPairs(str) {
-    
+    TEMP
 }
