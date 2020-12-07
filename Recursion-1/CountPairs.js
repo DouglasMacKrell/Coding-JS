@@ -13,6 +13,8 @@
 // countPairs('axax') → 2
 // countPairs('axbx') → 1
 
-function countPairs(str) {
-    TEMP
+function countPairs(str, counter, memo = {}) {
+    if (str === "") return
+
+
 }
