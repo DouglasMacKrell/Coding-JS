@@ -14,13 +14,21 @@
 function isEverywhere(nums, val) {
   let check = val;
   for (let i = 0; i < nums.length; i++) {
-    if (check === nums[i]) {
-      i += 1;
-    }
-    if (check === nums[i + 1]) {
-      continue;
+    if (i === 0) {
+      if (check === nums[i]) {
+        i += 1;
+      }
+      if (check === nums[i + 1]) {
+        continue;
+      } else {
+        return false;
+      }
     } else {
-      return false;
+      if (check === nums[i]) {
+        i += 1;
+      } else {
+        return false;
+      }
     }
   }
   return true;
