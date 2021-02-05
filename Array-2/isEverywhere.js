@@ -13,6 +13,9 @@
 
 function isEverywhere(nums, val) {
   let check = val;
+  if (nums.length < 2) {
+    return true;
+  }
   for (let i = 0; i < nums.length; i++) {
     if (i === 0) {
       if (check === nums[i]) {
